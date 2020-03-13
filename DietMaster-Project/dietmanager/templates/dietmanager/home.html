@@ -58,16 +58,16 @@
     <th>Amount</th>
   </tr>
   <tr>
-    <td>Calories</td><td>{{ calories }}</td>
+    <td>Calories</td><td>{{ v.calories }}</td>
   </tr>
   <tr>
-    <td>Carbohydrates</td><td>{{ carbs }}</td>
+    <td>Carbohydrates</td><td>{{ v.carbs }}</td>
   </tr>
   <tr>
-    <td>Proteins</td><td>{{ proteins }}</td>
+    <td>Proteins</td><td>{{ v.proteins }}</td>
   </tr>
   <tr>
-    <td>Fats</td><td>{{ fats }}</td>
+    <td>Fats</td><td>{{ v.fats }}</td>
   </tr>
 </table>
 </br></br>
@@ -75,13 +75,13 @@
 <form action="/select">
   <input type="submit" value="Select Diet"/>
 </form>
-{% comment %} <table id="customers">
+<!-- <table id="customers">
   <tr>
     <th>Item</th>
     <th>Count</th>
     <th>Curry</th>
   </tr>
-  
+
   {% for i in diet %}
     <tr>
       {% for j in i.values %}
@@ -98,6 +98,6 @@
       {{ j }}
     {% endfor %}
   {% endfor %}
-</div> {% endcomment %}
+</div> -->
 </body>
 </html>

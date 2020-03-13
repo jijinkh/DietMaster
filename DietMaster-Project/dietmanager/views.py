@@ -83,7 +83,7 @@ def login_user(request, message=""):
 	return render(request, 'dietmanager/login.html', {message:"No such user found"})
 
 
-# To get the health related details and store it in a db 
+# To get the health related details and store it in a db
 @login_required(login_url='/login/')
 def health(request):
     current_user = request.user
@@ -139,11 +139,11 @@ def health(request):
         v.proteins = values[0][1]
         v.fats = values[0][2]
         v.save()
-        return render(request, "dietmanager/home.html",{"calories":calories[0][0],"carbs":values[0][0],"proteins":values[0][1],"fats":values[0][2],"diet":"diet","avoidable":"avoidables"})
+        return render(request, "dietmanager/home.html",{"v":v})
     else:
         try:
             v = HealthModel.objects.get(username=current_user)
-            return render(request, "dietmanager/home.html",{"calories":v.calories,"carbs":v.carbs,"proteins":v.proteins,"fats":v.fats,"diet":"diet","avoidable":"avoidables"})
+            return render(request, "dietmanager/home.html",{"v":v})
         except:
             return render(request, "dietmanager/health1.html")
 
@@ -156,7 +156,7 @@ def main(request):
     return render(request, "dietmanager/home.html", {"user":current_user})
 
 
-# Takes the food details 
+# Takes the food details
 # Calculates the amount of nutrient intake and store it in a db
 def getFood(request):
     from pandas import DataFrame, read_csv
@@ -181,9 +181,9 @@ def getFood(request):
 
         st.calories_to_take = (h.calories + st.calories_to_take) - cals
 
-        st.save() 
+        st.save()
 
-        return render(request, "dietmanager/home.html",{"calories":h.calories,"proteins":h.proteins,"carbs":h.carbs,"fats":h.fats})
+        return render(request, "dietmanager/home.html",{"v":h})
 
     else:
         return render(request, 'dietmanager/getdiet.html', {"k":k})
