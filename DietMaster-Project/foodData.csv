@@ -2,192 +2,90 @@ name,calories,carbs,proteins,fats
 Dosa,133,75,11,47
 Idli,33,29,4,1
 Puttu,143,30,3,1
-Matthi curry,206,4,22,13
-ayala curry,343,13,45,12
-Malabar nice pathiri,80,2,0,0
-Kai pathiri,204,45,3,1
+Matthi_Curry,206,4,22,13
+ayala_Curry,343,13,45,12
+Malabar_Nice_Pathiri,80,2,0,0
+Kai_Pathiri,204,45,3,1
 Appam,165,38,3,0
 Porotta,376,77,10,83
 Pork,260,0,28,16
 Noodles,200,41,7,1
-Egg noodles,190,26,4,7
-Cucumber Salad,79,11,1,0
-Tomato Salad,225,8,1,22
-Spinach Salad,134,3,7,10
-Fresh fruit salad,97,24,2,1
+Egg_Noodles,190,26,4,7
+Cucumber_Salad,79,11,1,0
+Tomato_Salad,225,8,1,22
+Spinach_Salad,134,3,7,10
+Fresh_fruit_salad,97,24,2,1
 Sambar,50,8,1,2
-Pastry,180,17,3,10
-Pastry,100,20,1,2
 Pastry,174,34,2,5
-pastry,307,63,9,2
-Pastry,161,2,2,3
 Banana,89,23,1,0
 Apple,52,13,0,0
 Grapes,67,17,1,0
-Biscuit,53,9,1,2
-Biscuit,216,28,4,10
 Biscuit,210,28,5,9
-Biscuit,282,34,6,15
-Biscuit,54,7,1,3
-Biscuit,110,12,2,5
-Biscuit,215,28,4,10
-Biscuit,53,7,1,2
-Fries,110,20,2,3
-Fries,110,19,2,3
-Fries,380,48,4,19
-Fries,150,18,2,8
-Fries,340,49,4,15
-Fries,310,40,4,15
 Fries,230,29,3,11
-Fries,489,57,5,27
-Fries,230,29,3,11
-Coffee,1,0,0,0
-Coffee,5,0,0,0
-Coffee,85,14,0,2
-Coffee,310,46,5,12
-Coffee,5,0,0,0
-Coffee,10,1,1,1
 Coffee,50,1,0,5
 Tea,50,0,1,1
-Tea,70,18,0,0
-Tea,50,12,0,0
-Tea,50,4,0,0
 Bread,231,48,8,1
-Brown Bread,293,54,4,1
 Milk,150,12,8,8
-Milk,100,12,8,3
-Milk,120,18,12,0
-Milk,163,12,10,9
-Milk,130,12,8,5
-milk,130,13,10,5
 Yogurt,80,14,5,0
-Yogurt,100,20,5,0
-Yogurt,60,4,8,2
-Yogurt,50,8,2,2
-Yogurt,131,19,4,4
-Yogurt,100,15,4,3
-Yogurt,131,19,4,4
-Curd,108,2,7,8
-Curd,90,4,10,4
-Curd,56,4,4,3
-Curd,61,5,4,3
 Curd,64,6,4,3
-Curd,43,5,3,2
-Burger,420,0,25,35
-Burger,290,0,19,23
-Burger,420,27,19,16
-Burger,210,0,13,18
-Burger,270,6,17,20
-Burger,356,0,24,28
-Burger,290,0,20,23
-Burger,130,0,21,4
-Shake,200,15,25,3
-Shake,120,11,11,4
+Burger,356,17,24,28
 Shake,180,24,10,6
-Shake,180,30,9,2
-Shake,220,24,24,3
-Shake,150,17,17,2
-Shake,90,7,12,1
-Shake,44,1,10,0
-Shake,110,9,15,2
-Sandwich,474,18,61,16
-Sandwich,265,40,24,16
-Sandwich,700,0,0,0
 Sandwich,302,29,23,11
-Sandwich,300,42,16,7
-Beer,170,17,0,0
-Beer,147,11,1,0
-Beer,136,11,0,0
-Beer,149,12,0,0
-Beer,144,13,2,0
-Beer,140,8,0,0
-Beer,143,10,2,0
-Beer,160,39,2,0
-Beer,150,0,0,0
-Beer,148,0,0,0
 Idiyappam,130,29,1,1
-Pal Appam,27,0,0,0
+Palappam,27,0,0,0
 Appam,99,77,6,16
 Stew,177,15,21,4
-Meatball Stew,180,24,15,2
-Veggie Stew,408,24,17,27
-Hamburger Stew,100,0,0,0
-Tuna Stew,248,15,2,20
-Beef Stew,156,15,14,5
-Stew Beef,411,40,38,12
-Bean Stew,344,0,32,7
+VegStew,408,24,17,27
+BeefStew,156,15,14,5
+BeanStew,344,0,32,7
 Carrots,41,10,1,0
-Carrots,27,6,1,0
-Carrots,20,5,0,0
-Carrots,47,0,0,0
-Mushroom20,3,3,0,
-Mushroom,129,4,2,10
 Mushroom,90,9,1,6
-Mushroom,22,4,2,0
-Mushroom,125,0,0,0
-Chocolate,180,29,1,9
 Chocolate,133,15,2,7
-Chocolate,160,17,17,2
-Chocolate,130,9,2,9
-Ada Pradhaman,453,69,0,20
 Banana,60,15,0,0
 Ada,554,113,6,10
-pasta 9,361,78,11,1
-Lentil Dosa,120,24,3,1
+pasta,361,78,11,1
 Beans,80,15,7,0
 Vada,100,19,5,1
 Avial,71,20,8,40
-Peanuts,567,16,26,49
-peanut,160,5,9,17
-Peanut,105,9,4,6
-Peanut,116,4,4,10
-Peanut,40,1,2,3
-Peanut,10,2,0,1
-Chicken Biriyani,492,50,34,19
-Beef Biriyani,502,48,7,21
-Mutton Biriyani,651,81,24,32
-Vegetable Biriyani,397,50,16,10
+Peanut,116,5,9,10
+Chicken_Biriyani,492,50,34,19
+Beef_Biriyani,502,48,7,21
+Mutton_Biriyani,651,81,24,32
+Vegetable_Biriyani,397,50,16,10
 Poori,321,50,10,8
-Methi Poori,138,20,5,4
-Gobi Paratha,260,30,12,8
-Aloo Gobi,300,38,10,8
-Gobi Curry,119,6,9,4
-Beef Curry,346,12,20,37
-Paneer Curry,108,6,7,5
-Fish Curry,95,12,4,18
-Prawn Curry,150,20,2,3
-Sweet Peas,70,12,1,4
-Laddu,246,26,15,4
-Baby Spinach,20,3,0,2
-Tomato,18,4,0,1
-Watermelon,30,8,0,1
-Chicken Shawarma,430,45,9,39
-Cheese Pizza,180,26,5,9
+Aloo_Gobi,300,38,10,8
+Gobi_Curry,119,6,9,4
+Beef_Curry,346,12,20,37
+Paneer_Curry,108,6,7,5
+Fish_Curry,95,12,4,18
+Prawn_Curry,150,20,2,3
+Sweet_Peas,70,12,1,4
+Chicken_Shawarma,430,45,9,39
+Cheese_Pizza,180,26,5,9
 Pizza,488,72,12,28
-Cheese Paneer,100,0,8,6
-Mango Pickle,40,2,3,0
-Coconut Chutney,283,12,27,3
-Kadala Curry,452,0,24,15
-Egg Curry,195,9,15,8
-Rice Rotti,200,0,0,0
-Potato Rotti,493,84,14,13
-Coconut Pudding,100,21,3,0
-Tapioca Pudding,652,38,57,6
-Vanilla Pudding,100,20,3,0
-Chocolate Pudding,120,18,3,4
-Cornbread Pudding,171,17,10,3
-Apple Juice,110,27,0,1
-Pineapple Juice,25,0,0,0
-Orange Juice,110,26,0,1
-Gobi Manchurian,215,25,10,5
-Gobi Fry,295,0,170,0
-Butter Chicken,336,19,14,
-Pepper Chicken,100,1,1,21
-Gobi Chicken,250,0,0,0
-Crab Curry,140,14,5,12
-Payar Curry,392,70,1,25
-Ada Dosa,197,30,6,8
-Wheat Ada,225,40,6,10
-Kuzhalappam,105,19,13,6
-Boiled Eggs,70,1,5,6
-Vegetable Khurma,92,14,3,2
+Cheese_Paneer,100,0,8,6
+Mango_Pickle,40,2,3,0
+Coconut_Chutney,283,12,27,3
+Kadala_Curry,452,0,24,15
+Egg_Curry,195,9,15,8
+Rice_Rotti,200,0,0,0
+Potato_Rotti,493,84,14,13
+Coconut_Pudding,100,21,3,0
+Tapioca_Pudding,652,38,57,6
+Vanilla_Pudding,100,20,3,0
+Chocolate_Pudding,120,18,3,4
+Cornbread_Pudding,171,17,10,3
+Apple_Juice,110,27,0,1
+Pineapple_Juice,25,0,0,0
+Orange_Juice,110,26,0,1
+Gobi_Manchurian,215,25,10,5
+Gobi_Fry,295,0,170,0
+Butter_Chicken,336,19,14,
+Pepper_Chicken,100,1,1,21
+Gobi_Chicken,250,0,0,0
+Crab_Curry,140,14,5,12
+Payar_Curry,392,70,1,25
+Ada_Dosa,197,30,6,8
+Wheat_Ada,225,40,6,10
+Boiled_Eggs,50,5,5,6
+Vegetable_Khurma,92,14,3,2
