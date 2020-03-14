@@ -87,6 +87,7 @@ def login_user(request, message=""):
 @login_required(login_url='/login/')
 def health(request):
     current_user = request.user
+    new_message = ''
 
     if request.POST:
         forms = HealthModel()
@@ -134,16 +135,16 @@ def health(request):
         calories = lr.predict([lib])
         l2 = joblib.load("calories_to_nutrients.pkl")
         values = l2.predict(calories)
-        v.calories = calories[0][0]
-        v.carbs = values[0][0]
-        v.proteins = values[0][1]
-        v.fats = values[0][2]
+        v.calories = round(calories[0][0])
+        v.carbs = round(values[0][0])
+        v.proteins = round(values[0][1])
+        v.fats = round(values[0][2])
         v.save()
         return render(request, "dietmanager/home.html",{"v":v})
     else:
         try:
             v = HealthModel.objects.get(username=current_user)
-            return render(request, "dietmanager/home.html",{"v":v})
+            return render(request, "dietmanager/home.html",{"v":v,"message":new_message})
         except:
             return render(request, "dietmanager/health1.html")
 
@@ -161,6 +162,7 @@ def main(request):
 def getFood(request):
     from pandas import DataFrame, read_csv
     df = DataFrame(read_csv("foodData.csv"))
+    new_message = ''
 
     user = request.user
     h = get_object_or_None(HealthModel, username=user)
@@ -174,16 +176,34 @@ def getFood(request):
     k = df['name']
     k = set((list(k)))
     if request.POST:
-        food_item = request.POST['fooditem']
-        calories = df.loc[df['name'].isin([food_item])]
-        quantity = request.POST['quantity']
-        cals = calories.iloc[0]['calories'] * int(quantity)
+        try:
+            food_item = request.POST['fooditem_breakfast']
+            calories = df.loc[df['name'].isin([food_item])]
+            quantity = request.POST['quantity_breakfast']
+            cals1 = calories.iloc[0]['calories'] * int(quantity)
 
-        st.calories_to_take = (h.calories + st.calories_to_take) - cals
+            food_item = request.POST['fooditem_lunch']
+            calories = df.loc[df['name'].isin([food_item])]
+            quantity = request.POST['quantity_lunch']
+            cals2 = calories.iloc[0]['calories'] * int(quantity)
 
-        st.save()
+            food_item = request.POST['fooditem_dinner']
+            calories = df.loc[df['name'].isin([food_item])]
+            quantity = request.POST['quantity_dinner']
+            cals3 = calories.iloc[0]['calories'] * int(quantity)
 
-        return render(request, "dietmanager/home.html",{"v":h})
+            cals = cals1 + cals2 + cals3
+            calories_to_take = (h.calories + st.calories_to_take) - cals
+            st.calories_to_take = int(calories_to_take)
+
+            st.save()
+
+            if(calories_to_take>0):
+                new_message = "You are taking " + str(calories_to_take) + "calories less"
+
+            return render(request, "dietmanager/home.html",{"v":h,"message":new_message})
+        except:
+            return render(request, "dietmanager/home.html",{"v":h,"message":new_message})
 
     else:
         return render(request, 'dietmanager/getdiet.html', {"k":k})

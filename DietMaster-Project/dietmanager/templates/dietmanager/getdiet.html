@@ -1,29 +1,127 @@
-<html>
-    <body>
-        <form method="POST">
-            {% csrf_token %}
-            Choose a food item:
-            <select id="fooditem" name="fooditem">
-                {% for i in k %}
-                    <option value={{i}}>{{i}}</option>
-                {% endfor %}
-            </select>
-            <br><br>
-            Quantity:
-            <select id="quantity" name="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <br><br>
-            <input type="submit" value="submit">
-        </form>
-    </body>
-</html>
+  <html>
+  <style>
+    body {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Indian-Food-wikicont.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size:cover;
+      width:50%;
+      height:50%;
+      background-position: center;
+      }
+    div {
+      width : 300px;
+      padding : 2px;
+      margin : 10px;
+      background-color: white;
+      }
+    form{
+      padding : 5px;
+    }
+    h1{
+      background-color: white;
+      padding: 2px;
+      width: 80%;
+      font-size: 40px;
+    }
+    center{
+      width: 100%;
+      margin-left: 200px;
+    }
+    .submit-button{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    }
+  </style>
+  <body>
+    <center>
+      <h1>Select your diet plan</h1>
+      <form method="POST">
+        <div>
+          {% csrf_token %}
+          <h2>BreakFast</h2>
+          Choose a food item
+          <select id="fooditem_breakfast" name="fooditem_breakfast">
+            {% for i in k %}
+            <option value={{i}}>{{i}}</option>
+            {% endfor %}
+          </select>
+          <br><br>
+          Quantity
+          <select id="quantity_breakfast" name="quantity_breakfast">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <br><br>
+        </div>
+
+        <div>
+          <h2>Lunch</h2>
+          Choose a food item
+          <select id="fooditem_lunch" name="fooditem_lunch">
+            {% for i in k %}
+            <option value={{i}}>{{i}}</option>
+            {% endfor %}
+          </select>
+          <br><br>
+          Quantity
+          <select id="quantity_lunch" name="quantity_lunch">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <br><br>
+        </div>
+
+        <div>
+          <h2>Dinner</h2>
+          Choose a food item
+          <select id="fooditem_dinner" name="fooditem_dinner">
+            {% for i in k %}
+            <option value={{i}}>{{i}}</option>
+            {% endfor %}
+          </select>
+          <br><br>
+          Quantity
+          <select id="quantity_dinner" name="quantity_dinner">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <br><br>
+        </div>
+
+        <input class="submit-button" type="submit" value="submit">
+      </form>
+
+    </center>
+  </body>
+  </html>
